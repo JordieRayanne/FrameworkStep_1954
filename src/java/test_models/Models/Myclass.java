@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Models;
+package test_models.Models;
 
-import annotation.MyUrl;
+import etu1954.framework.annotation.MyUrl;
 
 /**
  *

@@ -5,7 +5,7 @@
  */
 package etu1954.framework.servlet;
 
-import annotation.MyUrl.MyURL;
+import etu1954.framework.annotation.MyUrl.MyURL;
 import etu1954.framework.Mapping;
 import java.util.HashMap;
 import java.io.IOException;
@@ -87,7 +87,7 @@ public class FrontServlet extends HttpServlet {
     
     public static HashMap<String, Mapping> getMappings() {
        HashMap<String, Mapping> mappingUrls = new HashMap<>();
-       Reflections reflections = new Reflections("Models", new MethodAnnotationsScanner());
+       Reflections reflections = new Reflections("test_models.Models", new MethodAnnotationsScanner());
        Set<Method> methods = reflections.getMethodsAnnotatedWith(MyURL.class);
        for (Method method : methods) {
            Mapping tempMapping = new Mapping();
