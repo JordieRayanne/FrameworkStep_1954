@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package test_models.Models;
+package Models;
 
 import etu1954.framework.annotation.MyUrl;
 
